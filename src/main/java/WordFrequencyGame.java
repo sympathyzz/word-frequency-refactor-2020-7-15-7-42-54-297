@@ -14,10 +14,10 @@ public class WordFrequencyGame {
             return sentence + " 1";
         } else {
             try {
-                String[] arr = sentence.split(SPLIT_SYMBOL);
+                String[] words = sentence.split(SPLIT_SYMBOL);
 
                 List<Input> inputList = new ArrayList<>();
-                for (String s : arr) {
+                for (String s : words) {
                     Input input = new Input(s, 1);
                     inputList.add(input);
                 }
