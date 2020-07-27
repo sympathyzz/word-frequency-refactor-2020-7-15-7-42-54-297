@@ -9,6 +9,7 @@ public class WordFrequencyGame {
     private final String SPLIT_SYMBOL="\\s+";
     private final String LINE_BREAK_SYMBOL="\n";
     private final String BLANK_SPACE_SYMBOL=" ";
+    private final String CALCULATE_ERROR="Calculate Error";
     public String getResult(String sentence) {
         if (sentence.split(SPLIT_SYMBOL).length == 1) {
             return sentence + " 1";
@@ -37,7 +38,7 @@ public class WordFrequencyGame {
                 }
                 return joiner.toString();
             } catch (Exception e) {
-                return "Calculate Error";
+                return CALCULATE_ERROR;
             }
         }
     }
