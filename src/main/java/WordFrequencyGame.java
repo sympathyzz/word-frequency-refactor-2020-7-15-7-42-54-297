@@ -17,8 +17,8 @@ public class WordFrequencyGame {
                 String[] words = sentence.split(SPLIT_SYMBOL);
 
                 List<Input> wordInfo = new ArrayList<>();
-                for (String s : words) {
-                    Input input = new Input(s, 1);
+                for (String word : words) {
+                    Input input = new Input(word, 1);
                     wordInfo.add(input);
                 }
                 Map<String, List<Input>> map = getListMap(wordInfo);
