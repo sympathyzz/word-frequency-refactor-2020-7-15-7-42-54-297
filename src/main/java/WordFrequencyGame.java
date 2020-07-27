@@ -8,6 +8,7 @@ import java.util.StringJoiner;
 public class WordFrequencyGame {
     private final String SPLIT_SYMBOL="\\s";
     private final String LINE_BREAK_SYMBOL="\n";
+    private final String BLANK_SPACE_SYMBOL=" ";
     public String getResult(String inputStr) {
         if (inputStr.split(SPLIT_SYMBOL).length == 1) {
             return inputStr + " 1";
@@ -31,7 +32,7 @@ public class WordFrequencyGame {
                 inputList.sort((w1, w2) -> w2.getWordCount() - w1.getWordCount());
                 StringJoiner joiner = new StringJoiner(LINE_BREAK_SYMBOL);
                 for (Input w : inputList) {
-                    String s = w.getValue() + " " + w.getWordCount();
+                    String s = w.getValue() + BLANK_SPACE_SYMBOL + w.getWordCount();
                     joiner.add(s);
                 }
                 return joiner.toString();
