@@ -9,12 +9,12 @@ public class WordFrequencyGame {
     private final String SPLIT_SYMBOL="\\s+";
     private final String LINE_BREAK_SYMBOL="\n";
     private final String BLANK_SPACE_SYMBOL=" ";
-    public String getResult(String inputStr) {
-        if (inputStr.split(SPLIT_SYMBOL).length == 1) {
-            return inputStr + " 1";
+    public String getResult(String sentence) {
+        if (sentence.split(SPLIT_SYMBOL).length == 1) {
+            return sentence + " 1";
         } else {
             try {
-                String[] arr = inputStr.split(SPLIT_SYMBOL);
+                String[] arr = sentence.split(SPLIT_SYMBOL);
 
                 List<Input> inputList = new ArrayList<>();
                 for (String s : arr) {
