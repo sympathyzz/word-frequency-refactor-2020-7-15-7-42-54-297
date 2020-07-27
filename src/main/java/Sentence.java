@@ -1,8 +1,8 @@
-public class Input {
+public class Sentence {
     private String value;
     private int count;
 
-    public Input(String w, int i) {
+    public Sentence(String w, int i) {
         this.value = w;
         this.count = i;
     }
