@@ -6,7 +6,7 @@ import java.util.StringJoiner;
 
 
 public class WordFrequencyGame {
-    private final String SPLIT_SYMBOL="\\s";
+    private final String SPLIT_SYMBOL="\\s+";
     private final String LINE_BREAK_SYMBOL="\n";
     private final String BLANK_SPACE_SYMBOL=" ";
     public String getResult(String inputStr) {
